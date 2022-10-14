@@ -30,3 +30,5 @@ con.execute("create view joined_proc_list as select p.report_id as report_id, pp
 #do your queries here
 pp.pprint(con.execute("select * from joined_proc_list where parent_name ILIKE '%wscript%'").fetchall())
 pp.pprint(con.execute("select parent_name from joined_proc_list where proc_name ILIKE '%iexplore%' group by parent_name").fetchall())
+
+con.close()
