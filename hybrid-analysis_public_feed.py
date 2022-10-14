@@ -1,4 +1,6 @@
 #this code is terrible but good enough for poc.
+# feed here: https://www.hybrid-analysis.com/feed?json 
+# be sure to use Chrome or Firefox user-agent when downloading. It seems like that's required, even though the feed is public
 
 import json
 import csv
