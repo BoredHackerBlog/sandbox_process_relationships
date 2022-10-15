@@ -2,7 +2,7 @@
 
 This repo contains some scripts that can take in CAPE sandbox task report or hybrid-analysis publicfeed json, extract process info, and store it into duckdb. (Thanks to Hybrid-Analysis and Zero2Auto (https://courses.zero2auto.com/) for the execution data)
 
-Duckdb database can queried via duckdb command line interface or python.
+Duckdb database can queried via duckdb command line interface or python. You can always export data to csv and load it in excel as well. (https://duckdb.org/docs/guides/import/csv_export)
 
 You can ask questions like:
 - what process launched ping? `select parent_name, proc_commandline from joined_proc_list where proc_commandline ilike '%ping.exe%';`
