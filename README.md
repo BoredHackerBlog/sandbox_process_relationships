@@ -1,6 +1,6 @@
 # sandbox_process_relationships
 
-This repo contains some scripts that can take in CAPE sandbox task report or hybrid-analysis publicfeed json, extract process info, and store it into duckdb.
+This repo contains some scripts that can take in CAPE sandbox task report or hybrid-analysis publicfeed json, extract process info, and store it into duckdb. (Thanks to Hybrid-Analysis and Zero2Auto (https://courses.zero2auto.com/) for the execution data)
 
 Duckdb database can queried via duckdb command line interface or python.
 
