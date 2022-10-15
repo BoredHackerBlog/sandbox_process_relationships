@@ -26,3 +26,5 @@ for process in jsonout['behavior']['processes']:
 con.execute("create view joined_proc_list as select p.report_id as report_id, pp.pid as parent_pid, pp.ppid as parent_ppid, pp.name as parent_name, pp.path as parent_path, pp.commandline as parent_commandline, p.pid as proc_pid, p.name as proc_name, p.path as proc_path, p.commandline as proc_commandline from processes p join processes pp on p.ppid = pp.pid AND p.report_id = pp.report_id")
 
 pp.pprint(con.execute("select parent_name from joined_proc_list where proc_name ILIKE '%wmi%' group by parent_name").fetchall())
+
+con.close()
